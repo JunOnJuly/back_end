@@ -149,7 +149,7 @@ def get_genre_music(request, lat, lon):
 
 
 @api_view(['GET'])
-def recommend_music(request, movie_title):
+def find_ost(request, movie_title):
     url = "https://spotify23.p.rapidapi.com/search/"
     querystring = {"q":{movie_title},"type":"albums","offset":"0","limit":"10","numberOfTopResults":"5"}
     headers = {
